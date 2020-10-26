@@ -56,6 +56,7 @@ stories:
   - action: action_send_email
   - action: utter_email_Sent
   - action: utter_goodbye
+  - action: action_restart
 
 
 - story: interactive_story_1
@@ -112,7 +113,8 @@ stories:
   - action: action_send_email
   - action: utter_email_Sent
   - action: utter_goodbye
-#  - action: action_restart
+  - action: action_restart
+
 
 - story: interactive_story_1
   steps:
@@ -167,6 +169,7 @@ stories:
   - action: action_send_email
   - action: utter_email_Sent
   - action: utter_goodbye
+  - action: action_restart
 
 - story: interactive_story_2
   steps:
@@ -232,6 +235,7 @@ stories:
   - action: action_send_email
   - action: utter_email_Sent
   - action: utter_goodbye
+  - action: action_restart
 
 - story: interactive_story_1
   steps:
@@ -285,6 +289,7 @@ stories:
   - action: action_send_email
   - action: utter_email_Sent
   - action: utter_goodbye
+  - action: action_restart
 
 - story: interactive_story_1
   steps:
@@ -352,6 +357,7 @@ stories:
   - action: action_send_email
   - action: utter_email_Sent
   - action: utter_goodbye
+  - action: action_restart
 
 - story: interactive_story_2
   steps:
@@ -396,5 +402,6 @@ stories:
   - intent: dont_send_email
   - action: utter_no_email
   - action: utter_goodbye
+  - action: action_restart
 
 
