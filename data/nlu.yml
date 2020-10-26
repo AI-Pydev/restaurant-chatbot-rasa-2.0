@@ -1,0 +1,373 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - thank
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello
+    - Hey
+    - Hi
+    - Hello!
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - thanks
+    - ok
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: restaurant_search
+  examples: |
+    - i'm looking for a place to eat
+    - I want to grab lunch
+    - I am searching for a dinner spot
+    - I am looking for some restaurants in [Delhi](location).
+    - I am looking for some restaurants in [Bangalore](location)
+    - show me [chinese](cuisine) restaurants
+    - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants in the [New Delhi]{"entity": "location", "value": "Delhi"}
+    - show me [American](cuisine) restaurants
+    - show me [American](cuisine) restaurants in the [New Delhi]{"entity": "location", "value": "Delhi"}
+    - show me a [mexican](cuisine) place in the [centre](location)
+    - i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
+    - search for restaurants
+    - anywhere in the [west](location)
+    - I am looking for [asian fusion](cuisine) food
+    - I am looking a restaurant in [294328](location)
+    - in [Gurgaon](location)
+    - [South Indian](cuisine)
+    - [North Indian](cuisine)
+    - [Italian](cuisine)
+    - [American](cuisine)
+    - [Mexican](cuisine)
+    - [Chinese]{"entity": "cuisine", "value": "chinese"}
+    - [chinese](cuisine)
+    - [Lithuania](location)
+    - Oh, sorry, in [Italy](location)
+    - in [delhi](location)
+    - I am looking for some restaurants in [Mumbai](location)
+    - I am looking for [mexican indian fusion](cuisine)
+    - What's the average budget for [indian](cuisine) for [two] {"entity": "people", "value": "2"} people
+    - What's the average budget for [chinese](cuisine) for [three] {"entity": "people", "value": "3"} people
+    - can you book a table in [rome](location) in a [moderate]{"entity": "price", "value": "mid"} price range with [british](cuisine) food for [four]{"entity": "people", "value": "4"} people
+    - [central](location) [indian](cuisine) restaurant
+    - please help me to find restaurants in [pune](location)
+    - Please find me a restaurantin [bangalore](location)
+    - [mumbai](location)
+    - show me restaurants
+    - please find me [chinese](cuisine) restaurant in [delhi](location)
+    - can you find me a [chinese](cuisine) restaurant
+    - [delhi](location)
+    - please find me a restaurant in [ahmedabad](location)
+    - please show me a few [italian](cuisine) restaurants in [bangalore](location)
+    - resturant
+    - find resturants
+    - Lesser than Rs. [300](budget)
+    - Rs. 300 to 700 (budget)
+    - More than 700 (budget)
+    - find restaurant near to me
+    - [pune](location)
+    - Find restaurant in [bangalore](location)?
+    - [Rishikesh](location)
+    - [ahmedabad](location)
+    - [bangalore](location)
+    - [chennai](location)
+    - [hyderabad](location)
+    - [kolkata](location)
+    - [agra](location)
+    - [ajmer](location)
+    - [aligarh](location)
+    - [allahabad](location)
+    - [amravati](location)
+    - [amritsar](location)
+    - [asansol](location)
+    - [aurangabad](location)
+    - [bareilly](location)
+    - [belgaum](location)
+    - [bhavnagar](location)
+    - [bhiwandi](location)
+    - [bhopal](location)
+    - [bhubaneswar](location)
+    - [bikaner](location)
+    - [bokaro steel city](location)
+    - [chandigarh](location)
+    - [coimbatore](location)
+    - [cuttack](location)
+    - [dehradun](location)
+    - [dhanbad](location)
+    - [durg-bhilai nagar](location)
+    - [durgapur](location)
+    - [erode](location)
+    - [faridabad](location)
+    - [firozabad](location)
+    - [ghaziabad](location)
+    - [gorakhpur](location)
+    - [gulbarga](location)
+    - [guntur](location)
+    - [gurgaon](location)
+    - [guwahati](location)
+    - [gwalior](location)
+    - [hubli-dharwad](location)
+    - [indore](location)
+    - [jabalpur](location)
+    - [jaipur](location)
+    - [jalandhar](location)
+    - [jammu](location)
+    - [jamnagar](location)
+    - [jamshedpur](location)
+    - [jhansi](location)
+    - [jodhpur](location)
+    - [kannur](location)
+    - [kanpur](location)
+    - [kakinada](location)
+    - [kochi](location)
+    - [kottayam](location)
+    - [kolhapur](location)
+    - [kollam](location)
+    - [kota](location)
+    - [kozhikode](location)
+    - [kurnool](location)
+    - [lucknow](location)
+    - [ludhiana](location)
+    - [madurai](location)
+    - [malappuram](location)
+    - [mathura](location)
+    - [goa](location)
+    - [mangalore](location)
+    - [meerut](location)
+    - [moradabad](location)
+    - [mysore](location)
+    - [nagpur](location)
+    - [nanded](location)
+    - [nashik](location)
+    - [nellore](location)
+    - [noida](location)
+    - [palakkad](location)
+    - [patna](location)
+    - [pondicherry](location)
+    - [raipur](location)
+    - [rajkot](location)
+    - [rajahmundry](location)
+    - [ranchi](location)
+    - [rourkela](location)
+    - [salem](location)
+    - [sangli](location)
+    - [siliguri](location)
+    - [solapur](location)
+    - [srinagar](location)
+    - [sultanpur](location)
+    - [surat](location)
+    - [thiruvananthapuram](location)
+    - [thrissur](location)
+    - [tiruchirappalli](location)
+    - [tirunelveli](location)
+    - [tiruppur](location)
+    - [ujjain](location)
+    - [vijayapura](location)
+    - [vadodara](location)
+    - [varanasi](location)
+    - [vasai-virar city](location)
+    - [vijayawada](location)
+    - [visakhapatnam](location)
+    - [warangal](location)
+    - Can you suggest some good restaurants in [Rishikesh](location)
+    - Okay. Show me some in [Allahabad](location)
+    - Can you suggest some good restaurants in [kolkata](location)
+    - I’m hungry. Looking out for some good restaurants
+    - in [mubaim](location)
+    - in [Mumbai](location)
+    - I’m hungry. Looking out for some good [chinese](cuisine) restaurants in [chandigarh](location)
+- intent: ask_budget
+  examples: |
+    - look for budget [300](price)
+    - look for budget [700](price)
+    - look for eat place between [300](price) and [700](price)
+    - look for eat place more than [700](price)
+    - look for eat place at less than [300](price)
+    - Lesser than Rs. [300](price)
+    - Rs. [300](price) to [700](price)
+    - More than [700](price)
+    - Price Range Rs. [300](price) to [700](price)
+    - Rs. [700](price) to [20000](price)
+    - Rs. [300](price) to [700](price)
+- intent: send_mail
+  examples: |
+    - [Yes](sendmail)
+    - [No](sendmail)
+    - Yes, Send email to [ere@xyz.xyz](emailid)
+    - "Please, enter your [ere@123.co.in](emailid)"
+    - "Ok great, please enter your [ere@123.rwrwer.werwer.ere](emailid)."
+    - "Please, enter your email id [xyz@gmail.com](emailid)
+    - send to [ere@domain.com](emailid)
+    - mail me [ere@123.com](emailid)
+    - can u mail to [ere@123.com](emailid)
+    - [ere@123.com](emailid)
+    - [hello@gmail.com](emailid)
+    - send_mail
+    - [kushwahakjitendra@gmail.com](emailid)
+    - yes. Please send it to [kushwahakjitendra@gmail.com](emailid)
+    - dont_send_email
+- synonym: chinese
+  examples: |
+    - chines
+    - Chinese
+    - Chines
+- synonym: Delhi
+  examples: |
+    - New Delhi
+    - Delhi
+    - NewDelhi
+    - Dilli
+    - Dellhi
+    - newdelhi
+    - Newdelhi
+    - new delhi
+    - new Delhi
+    - Delhi NCR
+- synonym: mid
+  examples: |
+    - moderate
+- synonym: '4'
+  examples: |
+    - four
+- synonym: bangalore
+  examples: |
+    - Bengaluru
+- synonym: vegetarian
+  examples: |
+    - veggie
+    - vegg
+- synonym: Mangalore
+  examples: |
+    - mangalore
+    - mangaluru
+    - Mangaluru
+- synonym: Mysore
+  examples: |
+    - mysore
+    - mysuru
+    - Mysuru
+- synonym: Visakhapatnam
+  examples: |
+    - visakhapatnam
+    - Vizag
+    - vizag
+- synonym: Thiruvananthapuram
+  examples: |
+    - thiruvananthapuram
+    - trivandrum
+    - Trivandrum
+    - Travancore
+- synonym: Allahabad
+  examples: |
+    - prayagraj
+    - Prayagraj
+- synonym: Pondicherry
+  examples: |
+    - pondicherry
+    - puducherry
+    - Puducherry
+- synonym: Nashik
+  examples: |
+    - nashik
+    - Nasik
+    - nasik
+- synonym: Kolkata
+  examples: |
+    - Calcutta
+    - kolkata
+    - kolkatta
+    - calcutta
+    - calcuta
+- synonym: Mumbai
+  examples: |
+    - Bombay
+    - mumbai
+    - bombay
+- synonym: Chennai
+  examples: |
+    - chennai
+    - madras
+    - Madras
+- regex: greet
+  examples: |
+    - hey[^\s]*
+- regex: pincode
+  examples: |
+    - [0-9]{6}
+- regex: send_mail
+  examples: |
+    - ([\w.-]+)@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.)|(([\w-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(]?)

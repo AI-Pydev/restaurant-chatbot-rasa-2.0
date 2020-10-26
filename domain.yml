@@ -1,0 +1,155 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- ask_budget
+- send_mail
+- greet
+- restaurant_search
+- dont_send_email
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+entities:
+- cuisine
+- emailid
+- location
+- price
+- sendmail
+
+slots:
+  budget_ok:
+    type: bool
+    initial_value: false
+    influence_conversation: true
+  cuisine:
+    type: text
+    influence_conversation: true
+  sendmail:
+    type: text
+    influence_conversation: true
+  cuisine_ok:
+    type: bool
+    initial_value: false
+    influence_conversation: true
+  email_message:
+    type: text
+    influence_conversation: true
+  emailid:
+    type: text
+    influence_conversation: true
+  location:
+    type: text
+    influence_conversation: true
+  location_ok:
+    type: bool
+    initial_value: false
+    influence_conversation: true
+  price:
+    type: text
+    influence_conversation: true
+  restaurant_exist:
+    type: bool
+    initial_value: false
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  - text: hey there! How may i help you
+  - text: Hi, How can I help you!
+  - text: Hey, How is it going. How May I help you Today
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  - text: goodbye :(
+  - text: Bye-bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_cuisine:
+  - buttons:
+    - payload: Chinese
+      title: Chinese
+    - payload: Mexican
+      title: Mexican
+    - payload: Italian
+      title: Italian
+    - payload: American
+      title: American
+    - payload: South Indian
+      title: South Indian
+    - payload: North Indian
+      title: North Indian
+    text: what kind of cuisine would you like?
+  utter_ask_budget:
+  - buttons:
+    - payload: Lesser than Rs. 300
+      title: Lesser than Rs. 300
+    - payload: Rs. 300 to 700
+      title: Rs. 300 to 700
+    - payload: Rs. 700 to 20000
+      title: More than 700
+    text: What's the average budget for two people?
+  utter_ask_howcanhelp:
+  - text: how can I help you?
+  utter_ask_location:
+  - text: In which city are you looking for restaurants?
+  utter_default:
+  - text: i cannot understand
+  utter_location_invalid:
+  - text: We do not operate in that area yet
+  utter_ask_location_retry:
+  - text: Will you like to search for some other location?
+  - text: Can I help you look for a restaurant at some other location?
+  utter_ask_email:
+  - text: Do you want a list of top 10 restaurants in your email?
+    buttons:
+    - title: Yes
+      payload: send_mail
+    - title: No
+      payload: dont_send_email
+  utter_ask_emailid:
+  - text: Please, enter your email id.
+  - text: Ok great, please enter your email id.
+  utter_email_Sent:
+  - text: EMAIL SENT! HAPPY DINING
+  - text: The details have been emailed to you
+  - text: Email has been sent to the address provided by you
+  utter_email_error:
+  - text: Sorry, something went wrong, could not send the email.
+  - text: Email could not be sent, apologise for the inconvience.
+  utter_no_email:
+  - text: Okay. Bon Appetit!
+  - text: HAPPY DINING
+
+actions:
+- action_location_check
+- action_restart
+- action_search_restaurants
+- action_send_email
+- action_slot_reset
+- utter_ask_budget
+- utter_ask_cuisine
+- utter_ask_email
+- utter_ask_emailid
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_location_retry
+- utter_default
+- utter_email_Sent
+- utter_email_error
+- utter_goodbye
+- utter_greet
+- utter_location_invalid
+- verify_budget
+- verify_cuisine
+- utter_no_email
+version: '2.0'

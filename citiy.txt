@@ -1,0 +1,16 @@
+[ahmedabad](location), [bangalore](location), [chennai](location),
+                       [delhi](location), [hyderabad](location), [kolkata](location), [mumbai](location), [pune](location)
+[agra](location), [ajmer](location), [aligarh](location), [allahabad](location), [amravati](location), [amritsar](location), [asansol](location), [aurangabad](location),
+                       [bareilly](location), [belgaum](location), [bhavnagar](location), [bhiwandi](location), [bhopal](location), [bhubaneswar](location), [bikaner](location),
+                       [bokaro steel city](location), [chandigarh](location), [coimbatore](location), [cuttack](location), [dehradun](location), [dhanbad](location),
+                       [durg-bhilai nagar](location), [durgapur](location), [erode](location), [faridabad](location), [firozabad](location), [ghaziabad](location), [gorakhpur](location),
+                       [gulbarga](location), [guntur](location), [gurgaon](location), [guwahati](location), [gwalior](location), [hubli-dharwad](location), [indore](location), [jabalpur](location),
+                       [jaipur](location), [jalandhar](location), [jammu](location), [jamnagar](location), [jamshedpur](location), [jhansi](location), [jodhpur](location), [kannur](location),
+                       [kanpur](location), [kakinada](location), [kochi](location),
+                       [kottayam](location), [kolhapur](location), [kollam](location), [kota](location), [kozhikode](location), [kurnool](location), [lucknow](location), [ludhiana](location),
+                       [madurai](location), [malappuram](location), [mathura](location), [goa](location), [mangalore](location), [meerut](location), [moradabad](location), [mysore](location),
+                       [nagpur](location), [nanded](location), [nashik](location), [nellore](location), [noida](location), [palakkad](location), [patna](location), [pondicherry](location), [raipur](location),
+                       [rajkot](location), [rajahmundry](location), [ranchi](location), [rourkela](location), [salem](location), [sangli](location), [siliguri](location), [solapur](location),
+                       [srinagar](location), [sultanpur](location), [surat](location), [thiruvananthapuram](location), [thrissur](location), [tiruchirappalli](location),
+                       [tirunelveli](location), [tiruppur](location), [ujjain](location), [vijayapura](location), [vadodara](location), [varanasi](location), [vasai-virar city](location),
+                       [vijayawada](location), [visakhapatnam](location), [warangal](location)

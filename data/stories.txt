@@ -1,0 +1,67 @@
+version: "2.0"
+
+stories:
+
+- story: story_01
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: bangalore
+  - action: action_location_check
+  - slot_was_set:
+      - location: bangalore
+      - location_ok: true
+#  - action: utter_location_invalid
+#  - action: utter_ask_location_retry
+#  - intent: affirm
+#  - action: utter_ask_location
+#  - action: action_slot_reset
+#  - intent: restaurant_search
+#    entities:
+#    - location_ok: True
+#    - location: Bangalore
+#  - action: action_location_check
+#  - slot_was_set:
+#    - location: bangalore
+#    - location_ok: True
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: Chinese
+  - slot_was_set:
+    - cuisine: bangalore
+  - action: verify_cuisine
+  - slot_was_set:
+    - cuisine: bangalore
+  - slot_was_set:
+    - cuisine_ok: true
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+      - price: '300'
+#  - action: verify_budget
+#    - slot_was_set:
+#      - budget_ok: true
+  - action: action_search_restaurants
+  - slot_was_set:
+      - location: bangalore
+  - slot_was_set:
+      - restaurant_exist: true
+  - action: utter_ask_email
+  - intent: affirm
+  - action: utter_ask_emailid
+  - intent: send_mail
+    entities:
+      - emailid: "kushwahakjitendra@gmail.com"
+#  - slot_was_set:
+#      - emailid: "kushwahakjitendra@gmail.com"
+  - action: action_send_email
+  - intent: thank
+  - action: utter_goodbye
+  - action: action_restart
+
+
