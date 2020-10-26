@@ -56,3 +56,345 @@ stories:
   - action: action_send_email
   - action: utter_email_Sent
   - action: utter_goodbye
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: pune
+  - slot_was_set:
+    - location: pune
+  - action: action_location_check
+  - slot_was_set:
+    - location: pune
+  - slot_was_set:
+    - location_ok: true
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: verify_cuisine
+  - slot_was_set:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine_ok: true
+  - action: utter_ask_budget
+  - intent: ask_budget
+    entities:
+    - price: '300'
+  - slot_was_set:
+    - price: '300'
+  - action: verify_budget
+  - slot_was_set:
+    - price: 300
+  - slot_was_set:
+    - budget_ok: true
+  - action: action_search_restaurants
+  - slot_was_set:
+    - location: pune
+  - slot_was_set:
+    - restaurant_exist: true
+  - action: utter_ask_email
+  - intent: send_mail
+  - action: utter_ask_emailid
+  - intent: send_mail
+    entities:
+    - emailid: kushwahakjitendra@gmail.com
+  - slot_was_set:
+    - emailid: kushwahakjitendra@gmail.com
+  - action: action_send_email
+  - action: utter_email_Sent
+  - action: utter_goodbye
+#  - action: action_restart
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: bangalore
+  - slot_was_set:
+    - location: bangalore
+  - action: action_location_check
+  - slot_was_set:
+    - location: bangalore
+  - slot_was_set:
+    - location_ok: true
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: Italian
+  - slot_was_set:
+    - cuisine: Italian
+  - action: verify_cuisine
+  - slot_was_set:
+    - cuisine: italian
+  - slot_was_set:
+    - cuisine_ok: true
+  - action: utter_ask_budget
+  - intent: ask_budget
+    entities:
+    - price: '700'
+    - price: '20000'
+  - slot_was_set:
+    - price: '20000'
+  - action: verify_budget
+  - slot_was_set:
+    - price: 20000
+  - slot_was_set:
+    - budget_ok: true
+  - action: action_search_restaurants
+  - slot_was_set:
+    - location: bangalore
+  - slot_was_set:
+    - restaurant_exist: true
+  - action: utter_ask_email
+  - intent: send_mail
+  - action: utter_ask_emailid
+  - intent: send_mail
+    entities:
+    - emailid: kushwahakjitendra@gmail.com
+  - slot_was_set:
+    - emailid: kushwahakjitendra@gmail.com
+  - action: action_send_email
+  - action: utter_email_Sent
+  - action: utter_goodbye
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: Rishikesh
+  - slot_was_set:
+    - location: Rishikesh
+  - action: action_location_check
+  - slot_was_set:
+    - location: null
+  - slot_was_set:
+    - location_ok: false
+  - action: utter_ask_location_retry
+  - intent: restaurant_search
+    entities:
+    - location: Allahabad
+  - slot_was_set:
+    - location: Allahabad
+  - action: action_location_check
+  - slot_was_set:
+    - location: Allahabad
+  - slot_was_set:
+    - location_ok: true
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: Italian
+  - slot_was_set:
+    - cuisine: Italian
+  - action: verify_cuisine
+  - slot_was_set:
+    - cuisine: italian
+  - slot_was_set:
+    - cuisine_ok: true
+  - action: utter_ask_budget
+  - intent: ask_budget
+    entities:
+    - price: '700'
+    - price: '20000'
+  - slot_was_set:
+    - price: '20000'
+  - action: verify_budget
+  - slot_was_set:
+    - price: 20000
+  - slot_was_set:
+    - budget_ok: true
+  - action: action_search_restaurants
+  - slot_was_set:
+    - location: Allahabad
+  - slot_was_set:
+    - restaurant_exist: true
+  - action: utter_ask_email
+  - intent: send_mail
+  - action: utter_ask_emailid
+  - intent: send_mail
+    entities:
+    - emailid: kushwahakjitendra@gmail.com
+  - slot_was_set:
+    - emailid: kushwahakjitendra@gmail.com
+  - action: action_send_email
+  - action: utter_email_Sent
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: kolkata
+  - slot_was_set:
+    - location: kolkata
+  - action: action_location_check
+  - slot_was_set:
+    - location: kolkata
+  - slot_was_set:
+    - location_ok: true
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: American
+  - slot_was_set:
+    - cuisine: American
+  - action: verify_cuisine
+  - slot_was_set:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine_ok: true
+  - action: utter_ask_budget
+  - intent: ask_budget
+    entities:
+    - price: '300'
+  - slot_was_set:
+    - price: '300'
+  - action: verify_budget
+  - slot_was_set:
+    - price: 300
+  - slot_was_set:
+    - budget_ok: true
+  - action: action_search_restaurants
+  - slot_was_set:
+    - location: kolkata
+  - slot_was_set:
+    - restaurant_exist: true
+  - action: utter_ask_email
+  - intent: send_mail
+  - action: utter_ask_emailid
+  - intent: send_mail
+    entities:
+    - emailid: kushwahakjitendra@gmail.com
+  - slot_was_set:
+    - emailid: kushwahakjitendra@gmail.com
+  - action: action_send_email
+  - action: utter_email_Sent
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mubaim
+  - slot_was_set:
+    - location: mubaim
+  - action: action_location_check
+  - slot_was_set:
+    - location: null
+  - slot_was_set:
+    - location_ok: false
+  - action: utter_ask_location_retry
+  - intent: restaurant_search
+    entities:
+    - location: Mumbai
+  - slot_was_set:
+    - location: Mumbai
+  - action: action_location_check
+  - slot_was_set:
+    - location: Mumbai
+  - slot_was_set:
+    - location_ok: true
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: South Indian
+  - slot_was_set:
+    - cuisine: South Indian
+  - action: verify_cuisine
+  - slot_was_set:
+    - cuisine: south indian
+  - slot_was_set:
+    - cuisine_ok: true
+  - action: utter_ask_budget
+  - intent: ask_budget
+    entities:
+    - price: '300'
+    - price: '700'
+  - slot_was_set:
+    - price: '700'
+  - action: verify_budget
+  - slot_was_set:
+    - price: 700
+  - slot_was_set:
+    - budget_ok: true
+  - action: action_search_restaurants
+  - slot_was_set:
+    - location: Mumbai
+  - slot_was_set:
+    - restaurant_exist: true
+  - action: utter_ask_email
+  - intent: send_mail
+  - action: utter_ask_emailid
+  - intent: send_mail
+    entities:
+    - emailid: kushwahakjitendra@gmail.com
+  - slot_was_set:
+    - emailid: kushwahakjitendra@gmail.com
+  - action: action_send_email
+  - action: utter_email_Sent
+  - action: utter_goodbye
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+    - location: chandigarh
+  - slot_was_set:
+    - cuisine: chinese
+  - slot_was_set:
+    - location: chandigarh
+  - action: action_location_check
+  - slot_was_set:
+    - location: chandigarh
+  - slot_was_set:
+    - location_ok: true
+  - action: verify_cuisine
+  - slot_was_set:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine_ok: true
+  - action: utter_ask_budget
+  - intent: ask_budget
+    entities:
+    - price: '300'
+    - price: '700'
+  - slot_was_set:
+    - price: '700'
+  - action: verify_budget
+  - slot_was_set:
+    - price: 700
+  - slot_was_set:
+    - budget_ok: true
+  - action: action_search_restaurants
+  - slot_was_set:
+    - location: chandigarh
+  - slot_was_set:
+    - restaurant_exist: true
+  - action: utter_ask_email
+  - intent: dont_send_email
+  - action: utter_no_email
+  - action: utter_goodbye
+
+
