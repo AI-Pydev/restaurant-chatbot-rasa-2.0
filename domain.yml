@@ -3,9 +3,9 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - ask_budget
-- send_mail
 - greet
 - restaurant_search
+- send_mail
 - dont_send_email
 - goodbye
 - affirm
@@ -19,16 +19,12 @@ entities:
 - location
 - price
 - sendmail
-
 slots:
   budget_ok:
     type: bool
     initial_value: false
     influence_conversation: true
   cuisine:
-    type: text
-    influence_conversation: true
-  sendmail:
     type: text
     influence_conversation: true
   cuisine_ok:
@@ -55,6 +51,11 @@ slots:
     type: bool
     initial_value: false
     influence_conversation: true
+  sendmail:
+    type: bool
+    initial_value: false
+    influence_conversation: true
+
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -112,10 +113,10 @@ responses:
   utter_ask_email:
   - text: Do you want a list of top 10 restaurants in your email?
     buttons:
-    - title: Yes
-      payload: send_mail
-    - title: No
-      payload: dont_send_email
+    - payload: /send_mail
+      title: Yes
+    - payload: /dont_send_email
+      title: No
   utter_ask_emailid:
   - text: Please, enter your email id.
   - text: Ok great, please enter your email id.
@@ -129,7 +130,6 @@ responses:
   utter_no_email:
   - text: Okay. Bon Appetit!
   - text: HAPPY DINING
-
 actions:
 - action_location_check
 - action_restart
@@ -149,7 +149,7 @@ actions:
 - utter_goodbye
 - utter_greet
 - utter_location_invalid
+- utter_no_email
 - verify_budget
 - verify_cuisine
-- utter_no_email
 version: '2.0'

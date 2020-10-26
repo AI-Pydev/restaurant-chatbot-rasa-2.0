@@ -46,7 +46,6 @@ class ActionSearchRestaurants(Action):
             dispatcher.utter_message("Sorry, no results found in this location:(" + "\n")
         else:
             d_rest = self.get_restaurants(lat, lon, cost_min, cost_max, cuisine)
-            print(d_rest)
             # Filter the results based on budget
             d_budget = [d_rest_single for d_rest_single in d_rest if
                         ((d_rest_single['restaurant']['average_cost_for_two'] > cost_min) & (
@@ -73,8 +72,8 @@ class ActionSearchRestaurants(Action):
                                restaurant['restaurant']['location']['address'] + \
                                " has been rated " + \
                                restaurant['restaurant']['user_rating']['aggregate_rating'] + \
-                               "And the average price for two people here is" + \
-                               str(restaurant['restaurant']['average_cost_for_two']) + "Rs \n" + "\n"
+                               "And the average price for two people here is " + \
+                               str(restaurant['restaurant']['average_cost_for_two']) + " Rs \n" + "\n"
                 dispatcher.utter_message("Here are our picks!" + "\n" + response)
         return [SlotSet('location', loc), SlotSet('restaurant_exist', restaurant_exist)]
 

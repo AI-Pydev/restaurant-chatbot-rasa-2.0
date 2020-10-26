@@ -43,6 +43,11 @@ nlu:
     - correct
     - thanks
     - ok
+    - No
+    - no
+    - Yes
+    - YES
+    - NO
 - intent: deny
   examples: |
     - no
@@ -250,6 +255,9 @@ nlu:
     - in [mubaim](location)
     - in [Mumbai](location)
     - I’m hungry. Looking out for some good [chinese](cuisine) restaurants in [chandigarh](location)
+    - find restaurant
+    - [bangalore](location)
+    - [Chinese]{"entity": "cuisine", "value": "chinese"}
 - intent: ask_budget
   examples: |
     - look for budget [300](price)
@@ -262,11 +270,9 @@ nlu:
     - More than [700](price)
     - Price Range Rs. [300](price) to [700](price)
     - Rs. [700](price) to [20000](price)
-    - Rs. [300](price) to [700](price)
+    - Rs. 300 to [700](price)
 - intent: send_mail
   examples: |
-    - [Yes](sendmail)
-    - [No](sendmail)
     - Yes, Send email to [ere@xyz.xyz](emailid)
     - "Please, enter your [ere@123.co.in](emailid)"
     - "Ok great, please enter your [ere@123.rwrwer.werwer.ere](emailid)."
@@ -276,10 +282,13 @@ nlu:
     - can u mail to [ere@123.com](emailid)
     - [ere@123.com](emailid)
     - [hello@gmail.com](emailid)
-    - send_mail
     - [kushwahakjitendra@gmail.com](emailid)
     - yes. Please send it to [kushwahakjitendra@gmail.com](emailid)
-    - dont_send_email
+    - [kushwahakjitendra@gmail.com](emailid)
+
+- intent: dont_send_email
+  examples: |
+    - Ok, Bon Appetit!
 - synonym: chinese
   examples: |
     - chines
