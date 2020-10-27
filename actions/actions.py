@@ -166,14 +166,14 @@ class ActionSendEmail(Action):
 
             s = smtplib.SMTP("smtp.gmail.com", 587)
             s.starttls()
-            s.login("upgraddemoslack@gmail.com", "Slack@123")
+            s.login("xxxxx@gmail.com", "xxxx@123")
 
             # Create the msg object
             msg = EmailMessage()
 
             # Fill in the message properties
             msg['Subject'] = d_email_subj
-            msg['From'] = "upgraddemoslack@gmail.com"
+            msg['From'] = "xxxx@gmail.com"
 
             # Fill in the message content
             msg.set_content(d_email_msg)
