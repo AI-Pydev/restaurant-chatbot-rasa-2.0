@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="256b6a19-be0d-405f-b3b4-55b6a9b461f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/models/20201026-233235.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jJqz7b5CmHLN7gk0IT9zblXTyB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/actions" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/project" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/actions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.gmail_mail">
+    <configuration name="actions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ChatbotUsingRASANLU" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/actions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/actions/actions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="build_nlu_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ChatbotUsingRASANLU" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/actions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/actions/build_nlu_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gmail_mail" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ChatbotUsingRASANLU" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gmail_mail.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="send_email" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ChatbotUsingRASANLU" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/send_email.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.gmail_mail" />
+        <item itemvalue="Python.send_email" />
+        <item itemvalue="Python.actions" />
+        <item itemvalue="Python.build_nlu_model" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="256b6a19-be0d-405f-b3b4-55b6a9b461f3" name="Default Changelist" comment="" />
+      <created>1603532803137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603532803137</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="199" width="1920" height="775" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603611529140">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="2014" y="162" width="1092" height="758" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046/1920.0.1280.1024@1920.0.1280.1024" timestamp="1603566945687" />
+    <state x="0" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1603611529140" />
+    <state x="0" y="199" width="1920" height="775" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.3200.1046@0.34.3200.1046" timestamp="1603603365276" />
+    <state x="456" y="340" width="1017" height="431" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603593671326">
+      <screen x="0" y="34" width="3200" height="1046" />
+    </state>
+    <state x="456" y="340" width="1017" height="431" key="#com.intellij.fileTypes.FileTypeChooser/0.34.3200.1046@0.34.3200.1046" timestamp="1603593671326" />
+    <state x="98" y="132" width="446" height="598" key="FileChooserDialogImpl" timestamp="1603610222259">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="2290" y="212" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046/1920.0.1280.1024@1920.0.1280.1024" timestamp="1603567243330" />
+    <state x="98" y="132" width="446" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1603610222259" />
+    <state x="163" y="132" width="530" height="598" key="FileChooserDialogImpl/0.34.3200.1046@0.34.3200.1046" timestamp="1603603754910" />
+    <state width="1892" height="334" key="GridCell.Tab.0.bottom" timestamp="1603736443617">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="334" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1603736443617" />
+    <state width="1892" height="325" key="GridCell.Tab.0.bottom/0.34.3200.1046@0.34.3200.1046" timestamp="1603603787178" />
+    <state width="1892" height="334" key="GridCell.Tab.0.center" timestamp="1603736443616">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="334" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1603736443616" />
+    <state width="1892" height="325" key="GridCell.Tab.0.center/0.34.3200.1046@0.34.3200.1046" timestamp="1603603787178" />
+    <state width="1892" height="334" key="GridCell.Tab.0.left" timestamp="1603736443615">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="334" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1603736443615" />
+    <state width="1892" height="325" key="GridCell.Tab.0.left/0.34.3200.1046@0.34.3200.1046" timestamp="1603603787177" />
+    <state width="1892" height="334" key="GridCell.Tab.0.right" timestamp="1603736443616">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="334" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1603736443616" />
+    <state width="1892" height="325" key="GridCell.Tab.0.right/0.34.3200.1046@0.34.3200.1046" timestamp="1603603787178" />
+    <state width="1892" height="486" key="GridCell.Tab.1.bottom" timestamp="1603701365107">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="486" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1603701365107" />
+    <state width="1892" height="325" key="GridCell.Tab.1.bottom/0.34.3200.1046@0.34.3200.1046" timestamp="1603603790677" />
+    <state width="1892" height="486" key="GridCell.Tab.1.center" timestamp="1603701365107">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="486" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1603701365107" />
+    <state width="1892" height="325" key="GridCell.Tab.1.center/0.34.3200.1046@0.34.3200.1046" timestamp="1603603790676" />
+    <state width="1892" height="486" key="GridCell.Tab.1.left" timestamp="1603701365106">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="486" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1603701365106" />
+    <state width="1892" height="325" key="GridCell.Tab.1.left/0.34.3200.1046@0.34.3200.1046" timestamp="1603603790675" />
+    <state width="1892" height="486" key="GridCell.Tab.1.right" timestamp="1603701365107">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1892" height="486" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1603701365107" />
+    <state width="1892" height="325" key="GridCell.Tab.1.right/0.34.3200.1046@0.34.3200.1046" timestamp="1603603790676" />
+    <state x="6" y="93" key="SettingsEditor" timestamp="1603610703848">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1924" y="58" key="SettingsEditor/0.34.1920.1046/1920.0.1280.1024@1920.0.1280.1024" timestamp="1603567252314" />
+    <state x="6" y="93" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1603610703848" />
+    <state x="10" y="93" key="SettingsEditor/0.34.3200.1046@0.34.3200.1046" timestamp="1603603762648" />
+    <state x="581" y="239" width="1101" height="648" key="find.popup" timestamp="1603733905555">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="580" y="239" width="759" height="634" key="find.popup/0.34.1920.1046/1920.0.1280.1024@0.34.1920.1046" timestamp="1603533586904" />
+    <state x="2307" y="201" width="734" height="634" key="find.popup/0.34.1920.1046/1920.0.1280.1024@1920.0.1280.1024" timestamp="1603560069482" />
+    <state x="581" y="239" width="1101" height="648" key="find.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1603733905555" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zomatopy.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
