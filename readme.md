@@ -24,6 +24,17 @@ Deployment & Slack Integration
 Integrated slack and fix the issue of rasa 2.0 to make the interaction with slack.
 Github link of the rasa 2.0 issue: https://github.com/RasaHQ/rasa/pull/6986/files
 
+Update email id and password
+Filename: action.py
+class: class ActionSendEmail(Action)
+Method: 
+s.login("xxxx@gmail.com", "xxx@1xx3")
+msg['From'] = "xxxx@gmail.com"
+
+Update zomato token
+class: class ActionSearchRestaurants(Action)
+Token: config = {"user_key": "xxxxx4a834xxxx49000000da4dfxxxxx"}
+method: retrieve_restaurant(lat, lon, cuisines_dict, cuisine, res_key, d_rest):
 
 Commands
 rasa train
